@@ -32,10 +32,10 @@ git clone https://github.com/GhostRiley115/Projeto-SacolaCompras-SpringApi
 3.	Acessar: http://localhost:8080
 
 ## Endpoints
-GET /items : listar itens
-POST /items : criar item
-PUT /items/{id} : Atualizar item
-DELETE /items/{id} : Remover item
+GET /items : listar itens;
+POST /items : criar item;
+PUT /items/{id} : Atualizar item;
+DELETE /items/{id} : Remover item.
 
 ## Objetivo
 Praticar desenvolvimento de APIs REST utilizando Spring Boot e boas práticas de organização em camadas.
