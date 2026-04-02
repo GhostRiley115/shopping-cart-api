@@ -1,41 +1,77 @@
-# Shopping Cart API
+# Shopping Cart API (Spring Boot)
 
-REST API desenvolvida com Java e Spring Boot para gerenciamento de uma sacola de compras.
+RESTful API developed using Java and Spring Boot to simulate a shopping cart system, allowing users to manage orders, products, and checkout operations.
 
-Este projeto simula um sistema de e-commerce, permitindo adicionar, listar, atualizar e remover itens da sacola.
+This project follows a layered architecture (Controller → Service → Repository) and represents a backend system similar to food delivery or e-commerce platforms.
 
-## Tecnologias
-- Java
+## Technologies
+- Java 17
 - Spring Boot
 - Spring Data JPA
-- H2
-- Maven
+- Hibernate
+- H2 Database
+- Swagger (Springfox)
+- Gradle
 
-## Funcionalidades
-- Criar item na sacola
-- Listar itens
-- Atualizar quantidade
-- Remover item
-- Escolher a forma de pagamento
+## Features
+- Shopping cart creation
+- Add items to cart
+- Remove items from cart
+- Calculate total cart value
+- Close/checkout cart
+- Relationship between customer, product, and restaurant
 
-## Arquitetura
-Projeto estruturado seguindo o padrão:
-- Controller
-- Service
-- Repository
-- Entity
+## Project Structure
+The project is organized using a standard Spring Boot architecture:
+- Controller -> Handles HTTP requests
+- Service -> Business logic
+- Repository -> Data access layer (JPA)
+- Entity -> Database models
 
-## Como rodar o projeto
-git clone https://github.com/GhostRiley115/Projeto-SacolaCompras-SpringApi
-1.	Abrir no IntelliJ
-2.	Rodar a aplicação
-3.	Acessar: http://localhost:8080
+## Database
+- Type: H2 (in memory)
+- Automatically created at runtime using Hibernate
+- Resets every time the application restarts
 
-## Endpoints
-GET /items : listar itens;
-POST /items : criar item;
-PUT /items/{id} : Atualizar item;
-DELETE /items/{id} : Remover item.
+## How to run
+git clone https://github.com/YOUR_USERNAME/shopping-cart-api.git
+cd shopping-cart-api
+./gradlew bootRun
 
-## Objetivo
-Praticar desenvolvimento de APIs REST utilizando Spring Boot e boas práticas de organização em camadas.
+Or run directly via your IDE (IntelliJ, Eclipse, etc.)
+
+## Access
+- API Base URL: http://localhost:8081
+- Swagger UI (API documentation): http://localhost:8081/swagger-ui/
+- H2 Console (database access): http://localhost:8081/h2-console
+
+## H2 Database Access
+Use the following configuration:
+- JDBC URL: jdbc:h2:mem:testdb
+- Username: sa
+- Password: (leave blank)
+
+## Domain Model
+- Customer (Cliente)
+- Product (Produto)
+- Restaurant (Restaurante)
+- Item
+- Shopping Cart (Sacola)
+
+## Objective
+To practice backend development using Spring Boot, focusing on:
+- REST API design
+- Layered architecture
+- Database relationships
+- Business logic implementation
+
+## Project Context
+This project represents the backend of a simulated real-world system.
+
+It can be integrated with a frontend (web or mobile) to create a complete application, similar to platforms like food delivery services.
+
+## Future Improvements
+- Authentication and authorization (JWT)
+- Migration to a real database (PostgreSQL/MySQL)
+- Deployment (cloud environment)
+- Integration with frontend applications
