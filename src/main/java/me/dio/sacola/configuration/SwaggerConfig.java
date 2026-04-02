@@ -13,7 +13,7 @@ public class SwaggerConfig {
     @Bean
     public Docket getBean() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .paths(PathSelectors.regex("/ifood-devweek/.*"))
+                .paths(PathSelectors.regex("/api/v1/.*"))
                 .build()
                 .apiInfo(getInfo());
     }
