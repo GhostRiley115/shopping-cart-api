@@ -34,7 +34,7 @@ The project is organized using a standard Spring Boot architecture:
 - Resets every time the application restarts
 
 ## How to run
-git clone https://github.com/YOUR_USERNAME/shopping-cart-api.git
+git clone https://github.com/GhostRiley115/shopping-cart-api.git
 cd shopping-cart-api
 ./gradlew bootRun
 
@@ -57,6 +57,14 @@ Use the following configuration:
 - Restaurant (Restaurante)
 - Item
 - Shopping Cart (Sacola)
+
+## Endpoints
+### Add item to shopping cart
+- POST /api/v1/sacolas
+### Get shopping cart by ID
+- GET /api/v1/sacolas/{id}
+### Close shopping cart
+- PATCH /api/v1/sacolas/{id}/fechar
 
 ## Objective
 To practice backend development using Spring Boot, focusing on:
