@@ -35,3 +35,20 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Build
+/build/
+.gradle/
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Environment
+.env
+
+# H2 database (if persisted to file)
+*.mv.db
+*.trace.db
