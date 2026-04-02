@@ -48,8 +48,8 @@ Or run directly via your IDE (IntelliJ, Eclipse, etc.)
 ## H2 Database Access
 Use the following configuration:
 - JDBC URL: jdbc:h2:mem:testdb
-- Username: sa
-- Password: (leave blank)
+- Username: clayton
+- Password: 5445
 
 ## Domain Model
 - Customer (Cliente)
